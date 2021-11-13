@@ -1,4 +1,4 @@
-import LayoutResponseMock from "../../../mock/LayoutResponseMock.json";
+import LayoutResponseMock from "../../mock/LayoutResponseMock";
 
 class LayoutService {
   public static async getLayout(): Promise<{}> {

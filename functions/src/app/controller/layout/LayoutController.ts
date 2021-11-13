@@ -1,11 +1,10 @@
-import express, { Request, Response } from "express";
-import Controller from "../../../common/controller/Controller";
-import LayoutService from "../service/LayoutService";
+import { Request, Response } from "express";
+import Controller from "../../common/controller/Controller";
+import Resource from "../../config/Resource";
+import LayoutService from "../../service/layout/LayoutService";
 
 class LayoutController extends Controller {
-  constructor(app: express.Application) {
-    super(app, "/layout");
-  }
+  resource: Resource = Resource.LAYOUT;
 
   setEndpoints() {
     this.setEndpoint("/").get((req: Request, res: Response) => {
