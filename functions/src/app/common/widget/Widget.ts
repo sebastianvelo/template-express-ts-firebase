@@ -11,7 +11,7 @@ class Widget<Model> implements IWidget<Model> {
 
   data?: Model;
 
-  children: Widget<any>[] = [];
+  children: IWidget<any>[] = [];
 
   protected constructor(uiType: string) {
     this.uiType = uiType;
@@ -29,12 +29,12 @@ class Widget<Model> implements IWidget<Model> {
     return this;
   }
 
-  setChildren(children: Widget<any>[]) {
+  setChildren(children: IWidget<any>[]) {
     this.children = children;
     return this;
   }
 
-  addChild(child: Widget<any>) {
+  addChild<M>(child: IWidget<M>) {
     this.children.push(child);
     return this;
   }

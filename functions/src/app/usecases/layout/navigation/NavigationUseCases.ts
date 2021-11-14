@@ -5,14 +5,6 @@ const getActions = () => [
     content: "Home",
     route: "/home"
   },
-  {
-    content: "Home",
-    route: "/home"
-  },
-  {
-    content: "Home",
-    route: "/home"
-  }
 ];
 
 const getMenu = () => ({
@@ -33,7 +25,7 @@ const getMenu = () => ({
 });
 
 const getNavigation = (): NavigationProps => ({
-  header: "Tailwind!",
+  header: "Template!",
   actions: getActions(),
   menu: getMenu()
 });
