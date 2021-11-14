@@ -1,6 +1,7 @@
 import { IWidgetPage } from "../../../common/widget/WidgetPage";
 import { ImageProps } from "../../../usecases/widget/atomic/image/ImageWidget";
 import { ActionLinkProps } from "../../../usecases/widget/atomic/link/ActionLinkWidget";
+import { ActionProps } from "../../../usecases/widget/components/action/ActionWidget";
 
 interface MenuProps {
   toggler: ImageProps;

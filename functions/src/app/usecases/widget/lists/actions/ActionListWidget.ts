@@ -1,4 +1,5 @@
 import Widget from "../../../../common/widget/Widget";
+import { ActionProps } from "../../components/action/ActionWidget";
 
 export interface ActionListProps {
   actions?: ActionProps[];
