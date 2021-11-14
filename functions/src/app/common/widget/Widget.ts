@@ -1,4 +1,10 @@
-class Widget<Model> {
+export interface IWidget<Model> {
+  uiType: string;
+  id?: string;
+  data?: Model;
+  children?: IWidget<any>[];
+}
+class Widget<Model> implements IWidget<Model> {
   uiType: string;
 
   id?: string;

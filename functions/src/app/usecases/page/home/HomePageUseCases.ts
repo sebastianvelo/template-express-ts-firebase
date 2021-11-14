@@ -1,5 +1,5 @@
-import Widget from "../../../widget/Widget";
-import WidgetPage from "../../../widget/WidgetPage";
+import Widget from "../../../common/widget/Widget";
+import WidgetPage from "../../../common/widget/WidgetPage";
 
 interface TabsProps {
   tabs?: {
