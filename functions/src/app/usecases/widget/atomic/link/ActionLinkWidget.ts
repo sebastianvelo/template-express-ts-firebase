@@ -1,10 +1,7 @@
 import Widget from "../../../../common/widget/Widget";
 import ColorProps from "../../../../model/common/util/ColorProps";
-import TextContentProps from "../../../../model/common/util/TextContentProps";
 
-export interface ActionLinkProps
-  extends TextContentProps,
-    ColorProps {
+export interface ActionLinkProps extends ColorProps {
   route?: string;
 }
 
