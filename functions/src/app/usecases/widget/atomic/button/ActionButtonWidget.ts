@@ -11,7 +11,7 @@ export interface ActionButtonProps
   disabled?: boolean;
 }
 
-const ActionButtonWidget = (props: ActionButtonProps) =>
+const ActionButtonWidget = (props?: ActionButtonProps) =>
   Widget.builder<ActionButtonProps>("button").setData(props);
 
 export default ActionButtonWidget;

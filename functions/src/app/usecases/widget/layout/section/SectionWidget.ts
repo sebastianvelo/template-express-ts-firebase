@@ -7,7 +7,7 @@ interface SectionProps {
   title?: TitleProps;
 }
 
-const SectionWidget = (props: SectionProps) =>
+const SectionWidget = (props?: SectionProps) =>
   Widget.builder<SectionProps>("section").setData(props);
 
 export default SectionWidget;

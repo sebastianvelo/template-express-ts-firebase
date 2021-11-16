@@ -7,7 +7,7 @@ interface PaginationProps extends ColorProps {
   active?: number;
 }
 
-const PaginationWidget = (props: PaginationProps) =>
+const PaginationWidget = (props?: PaginationProps) =>
   Widget.builder<PaginationProps>("pagination").setData(props);
 
 export default PaginationWidget;

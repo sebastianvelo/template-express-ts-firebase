@@ -11,7 +11,7 @@ interface CheckboxListProps {
   left?: boolean;
 }
 
-const CheckboxListWidget = (props: CheckboxListProps) =>
+const CheckboxListWidget = (props?: CheckboxListProps) =>
   Widget.builder<CheckboxListProps>("checkbox-list").setData(props);
 
 export default CheckboxListWidget;

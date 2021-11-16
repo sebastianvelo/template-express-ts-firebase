@@ -5,7 +5,7 @@ interface DropdownProps {
   content?: IWidget<any> | IWidget<any>[];
 }
 
-const DropdownWidget = (props: DropdownProps) =>
+const DropdownWidget = (props?: DropdownProps) =>
   Widget.builder<DropdownProps>("dropdown").setData(props);
 
 export default DropdownWidget;

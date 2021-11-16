@@ -24,7 +24,7 @@ class Widget<Model> implements IWidget<Model> {
     return this;
   }
 
-  setData(data: Model) {
+  setData(data?: Model) {
     this.data = data;
     return this;
   }

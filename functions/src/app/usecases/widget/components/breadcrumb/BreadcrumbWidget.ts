@@ -5,7 +5,7 @@ interface BreadcrumbProps {
   levels: ActionLinkProps[];
 }
 
-const BreadcrumbWidget = (props: BreadcrumbProps) =>
+const BreadcrumbWidget = (props?: BreadcrumbProps) =>
   Widget.builder<BreadcrumbProps>("breadcrumb").setData(props);
 
 export default BreadcrumbWidget;

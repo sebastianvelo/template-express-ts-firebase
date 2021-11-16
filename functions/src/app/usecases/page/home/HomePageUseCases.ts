@@ -4,7 +4,7 @@ import PaginationWidget from "../../widget/components/pagination/PaginationWidge
 
 const getHomePage = WidgetPage.builder("view")
   .setRoute("/home")
-  .addChild(TitleWidget({ content: "Home page" }))
+  .addChild(TitleWidget())
   .addChild(PaginationWidget({
     total: 25,
     pagesToShow: 8,

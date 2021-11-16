@@ -8,7 +8,7 @@ export interface ActionAnchorProps
   url?: string;
 }
 
-const ActionAnchorWidget = (props: ActionAnchorProps) =>
+const ActionAnchorWidget = (props?: ActionAnchorProps) =>
   Widget.builder<ActionAnchorProps>(`anchor`).setData(props);
 
 export default ActionAnchorWidget;

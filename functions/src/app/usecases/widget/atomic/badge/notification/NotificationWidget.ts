@@ -8,7 +8,7 @@ interface NotificationProps {
   quiet?: boolean;
 }
 
-const NotificationWidget = (props: NotificationProps) =>
+const NotificationWidget = (props?: NotificationProps) =>
   Widget.builder<NotificationProps>("notification").setData(props);
 
 export default NotificationWidget;

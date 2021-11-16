@@ -12,7 +12,7 @@ export interface CardProps {
   };
 }
 
-const CardWidget = (props: CardProps) =>
+const CardWidget = (props?: CardProps) =>
   Widget.builder<CardProps>("card").setData(props);
 
 export default CardWidget;

@@ -10,7 +10,7 @@ interface ButtonDropdownProps
   extends ActionButtonProps,
     ButtonDropdownContentProps {}
 
-const ButtonDropdownWidget = (props: ButtonDropdownProps) =>
+const ButtonDropdownWidget = (props?: ButtonDropdownProps) =>
   Widget.builder<ButtonDropdownProps>("button-dropdown").setData(props);
 
 export default ButtonDropdownWidget;

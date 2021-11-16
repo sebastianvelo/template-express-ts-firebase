@@ -5,7 +5,7 @@ export interface ArticleProps {
   title?: TitleProps;
 }
 
-const ArticleWidget = (props: ArticleProps) =>
+const ArticleWidget = (props?: ArticleProps) =>
   Widget.builder<ArticleProps>("article").setData(props);
 
 export default ArticleWidget;

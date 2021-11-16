@@ -10,7 +10,7 @@ export interface StoryProps extends ActionProps {
   hoverable?: boolean;
 }
 
-const StoryWidget = (props: StoryProps) =>
+const StoryWidget = (props?: StoryProps) =>
   Widget.builder<StoryProps>("story").setData(props);
 
 export default StoryWidget;

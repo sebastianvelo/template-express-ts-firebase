@@ -5,7 +5,7 @@ export interface ActionLinkProps extends ColorProps {
   route?: string;
 }
 
-const ActionLinkWidget = (props: ActionLinkProps) =>
+const ActionLinkWidget = (props?: ActionLinkProps) =>
   Widget.builder<ActionLinkProps>("link").setData(props);
 
 export default ActionLinkWidget;

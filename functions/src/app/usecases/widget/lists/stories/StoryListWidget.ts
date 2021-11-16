@@ -6,7 +6,7 @@ interface StoryListProps {
   hoverable?: boolean;
 }
 
-const StoryListWidget = (props: StoryListProps) =>
+const StoryListWidget = (props?: StoryListProps) =>
   Widget.builder<StoryListProps>("story-list").setData(props);
 
 export default StoryListWidget;

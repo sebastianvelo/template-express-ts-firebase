@@ -6,7 +6,7 @@ export interface MessageProps {
   quiet?: boolean;
 }
 
-const MessageWidget = (props: MessageProps) =>
+const MessageWidget = (props?: MessageProps) =>
   Widget.builder<MessageProps>("message").setData(props);
 
 export default MessageWidget;

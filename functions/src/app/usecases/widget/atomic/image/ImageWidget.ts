@@ -6,7 +6,7 @@ export interface ImageProps extends RoundableProps {
   src?: string;
 }
 
-const ImageWidget = (props: ImageProps) =>
+const ImageWidget = (props?: ImageProps) =>
   Widget.builder<ImageProps>("img").setData(props);
 
 export default ImageWidget;

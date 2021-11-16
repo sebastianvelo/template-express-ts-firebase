@@ -9,7 +9,7 @@ interface RowProps {
   xl?: boolean;
 }
 
-const RowWidget = (props: RowProps) =>
+const RowWidget = (props?: RowProps) =>
   Widget.builder<RowProps>("row").setData(props);
 
 export default RowWidget;

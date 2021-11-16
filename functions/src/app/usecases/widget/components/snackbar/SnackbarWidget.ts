@@ -5,7 +5,7 @@ interface SnackbarProps extends MessageProps {
   open?: boolean;
 }
 
-const SnackbarWidget = (props: SnackbarProps) =>
+const SnackbarWidget = (props?: SnackbarProps) =>
   Widget.builder<SnackbarProps>("snackbar").setData(props);
 
 export default SnackbarWidget;

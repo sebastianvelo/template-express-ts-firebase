@@ -4,7 +4,7 @@ export interface CheckboxLabelProps {
   label?: string;
 }
 
-const CheckboxLabelWidget = (props: CheckboxLabelProps) =>
+const CheckboxLabelWidget = (props?: CheckboxLabelProps) =>
   Widget.builder<CheckboxLabelProps>("checkbox").setData(props);
 
 export default CheckboxLabelWidget;

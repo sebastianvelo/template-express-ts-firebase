@@ -8,7 +8,7 @@ export interface ActionProps
     ActionAnchorProps,
     ActionButtonProps {}
 
-const ActionWidget = (props: ActionProps) =>
+const ActionWidget = (props?: ActionProps) =>
   Widget.builder<ActionProps>("action").setData(props);
 
 export default ActionWidget;

@@ -7,7 +7,7 @@ interface TabsProps {
   }[];
 }
 
-const TabsWidget = (props: TabsProps) =>
+const TabsWidget = (props?: TabsProps) =>
   Widget.builder<TabsProps>("tabs").setData(props);
 
 export default TabsWidget;
